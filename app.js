@@ -41,10 +41,12 @@ function getamount()
 m = 10000;
 //Intialise the textbox value in a varible
 var a = document.getElementById ('amount1' ).value;
+var rb = m - a;
 //Check if entered amount is greater than the original amount or not and it also should be mulitple of 100
 if(a<=m && a%100==0)
 //alert("" +a);
-document.getElementById ('display').innerHTML ="Your withdraw amount : "+a;
+document.getElementById ('display').innerHTML ="Your withdraw amount : "+a+ " and your remaining balance is "+ rb ;
+
 else
 //alert("invalid cash");
 document.getElementById ('display').innerHTML ="Invalid cash";
