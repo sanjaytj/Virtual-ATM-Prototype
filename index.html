@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Simple ATM using javascript</title>
+</head>
+<body>
+<form method ="post">
+Please Enter Your Pin Number:<input type="text" name="number" id="number" /><p></p>
+<input type="button" name="submit" id="submit" onclick="getaction()" value="start"/>
+<p id="result"> </p>
+
+<div id="options12" style="display:none;">
+<input type='radio' name='radio' onclick='myfunction(this.value)' value='1'/>Balance
+<input type='radio' name='radio' onclick='myfunction(this.value)' value='2'/>Withdraw
+<input type='radio' name='radio' onclick='myfunction(this.value)' value='3'/>Fastcash
+</div>
+<p id="result1",></p>
+
+<div id="display" style="display:none;">
+<label>Please Enter Your Withdraw Amount</label>
+<input type="text" name="amount1" id="amount1" value=""/>
+<input type="submit" name="submit1" value="submit" onclick="getamount()"/>
+</div>
+
+<div id="display1" style="display:none;">
+<label>Please Select Your Fastcash Option</label>
+<select id="myselect1">
+<option value="10000">10000</option>
+<option value ="20000">20000</option>
+< option value ="50000">50000</option>
+</select>
+<input type="submit" name="submit2" value="submit" onclick="getamount1()">
+</div>
+</form>
+</body>
+<script src="app.js" type="text/javascript">
+
+</script>
+</html>
