@@ -45,7 +45,7 @@ var rb = m - a;
 //Check if entered amount is greater than the original amount or not and it also should be mulitple of 100
 if(a<=m && a%100==0)
 //alert("" +a);
-document.getElementById ('display').innerHTML ="Your withdraw amount : "+a+ " and your remaining balance is "+ rb ;
+document.getElementById ('display').innerHTML ="Your withdraw D amount : "+a+ " and your remaining balance is "+ rb ;
 
 else
 //alert("invalid cash");
